@@ -2,13 +2,53 @@
 	margin: 0;
 	padding: 0;
 }
+html, body {
+	height: 100%;
+}
 body {
 	background-color: black;	
 }
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	margin-top: 49vh;
+.matrix_effect {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.profile_picture  img {
+		display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25vh;
+	border-radius: 50%;
+	position: relative;
+
+}
+.profile_picture .profile_banner {
+	font-family: Consolas, monaco, monospace;
+	position: relative;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.0);
+    border: 1px solid #000;
+    color: #00ff00;
+    padding: 8px;
+    
+	font-size: 150%;
+}
+#typewriter_bash {
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .25em;
+	animation: blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff00; }
 }
