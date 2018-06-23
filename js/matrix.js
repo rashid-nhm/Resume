@@ -1,14 +1,18 @@
 let canvas = document.getElementById( 'canvas1' );
 let ctx = canvas.getContext( '2d' );
 
-let man_scale = 1;
-
 let canvas2 = document.getElementById( 'canvas2' );
 let ctx2 = canvas2.getContext( '2d' );
-let cw = window.innerWidth, ch = window.innerHeight, charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'], maxCharCount = 100, fallingCharArr = [], fontSize = 5, maxColums = cw/(fontSize*man_scale);
+
+// Attributes
+let cw = window.innerWidth, 
+	ch = window.innerHeight, 
+	charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'], 
+	maxCharCount = 100, fallingCharArr = [], 
+	fontSize = 8, 
+	maxColums = cw/fontSize;
 canvas.width = canvas2.width = cw;
 canvas.height = canvas2.height = ch;
-
 
 function randomInt( min, max ) {
 	return Math.floor(Math.random() * ( max - min ) + min);
@@ -27,10 +31,10 @@ function Point(x,y)
 Point.prototype.draw = function(ctx){
 
 	this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
-    this.speed = randomFloat(1,5);
+    this.speed = randomFloat(1,3);
 
 
-    ctx2.fillStyle = "rgba(255,255,255,0.8)";
+    ctx2.fillStyle = "rgba(255,255,255,0.5)";
     ctx2.font = fontSize+"px san-serif";
     ctx2.fillText(this.value,this.x,this.y);
 
@@ -48,9 +52,12 @@ Point.prototype.draw = function(ctx){
     }
 }
 
-for(var i = 0; i < maxColums ; i++) {
-    fallingCharArr.push(new Point(i*fontSize*randomInt(1, man_scale*5),randomFloat(-1000,0)));
+for (let wv = 0; wv < 3; wv++) {
+	for(let i = 0; i < maxColums ; i++) {
+    	fallingCharArr.push(new Point(randomInt(1, i*fontSize*10),randomFloat(-1000,0)));
+	}
 }
+
 
 var update = function() {
 	ctx.fillStyle = "rgba(0,0,0,0.05)";
@@ -58,7 +65,7 @@ var update = function() {
 
     ctx2.clearRect(0,0,cw,ch);
 
-    var i = fallingCharArr.length;
+    let i = fallingCharArr.length;
 
     while (i--) {
     	fallingCharArr[i].draw(ctx);

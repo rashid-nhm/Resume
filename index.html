@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 <head>
-	<title>Rashid N H M</title>
+	<title>Resume - Rashid NHM</title>
 		
 	<meta charset="UTF-8" />
 	<meta name="description" content="Rashid N H M | Resume" />
@@ -10,19 +10,41 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/hint.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 <body>
-	<div class="profile_picture">
+	<div class="profile_picture" name="home">
 		<canvas id="canvas1" class="matrix_effect"></canvas>
 		<canvas id="canvas2" class="matrix_effect"></canvas>
 		<img src="images/profile_picture.jpg" alt="Profile Picture" />
 		<div class="profile_banner">
 			<span style="color: red; font-weight: bold;">rashid.nhm@resume</span>
-			<span style="color: white;">:</span><span style="color: #4286f4">~</span>
-			<span style="color: white;">$</span>
+			<span style="color: white; margin-left: -0.5em;">:</span><span style="color: #4286f4">~</span>
+			<span style="color: white; margin-left: -0.5em; margin-right: 10px;">$</span>
 			<span id="typewriter_bash"> Coming soon...</span>
 		</div>
 	</div>
+	<ul class="quick-nav-bar">
+		<li class="hint--right" aria-label="Return to Top">
+			<a href="#home" id="back-to-top" class="nav-link"><i class="material-icons">arrow_upward</i></a>
+		</li>
+		<li class="hint--right" aria-label="Objective">
+			<a href="#objective" class="nav-link"><i class="material-icons">public</i></a>
+		</li>
+		<li class="hint--right" aria-label="Experience">
+			<a href="#experience" class="nav-link"><i class="material-icons">work</i></a>
+		</li>
+		<li class="hint--right" aria-label="Education">
+			<a href="#education" class="nav-link"><i class="material-icons">book</i></a>
+		</li>
+		<li class="hint--right" aria-label="Projects/Portfolio">
+			<a href="#projects" class="nav-link"><i class="material-icons">computer</i></a>
+		</li>
+		<li class="hint--left" aria-label="Contact">
+			<a href="#contact" class="nav-link"><i class="material-icons">contacts</i></a>
+		</li>
+	</ul>	
 	<script src="js/matrix.js"></script>
 </body>
 </html>
