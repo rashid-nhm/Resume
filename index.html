@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" integrity="sha384-MUdXdzn1OB/0zkr4yGLnCqZ/n9ut5N7Ifes9RP2d5xKsTtcPiuiwthWczWuiqFOn" crossorigin="anonymous" />
-	<!--<link rel="stylesheet" href="css/infinite-slider.css" />-->
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha384-YGnnOBKslPJVs35GG0TtAZ4uO7BHpHlqJhs0XK3k6cuVb6EBtl+8xcvIIOKV5wB+" crossorigin="anonymous"></script>
@@ -62,26 +61,40 @@
 			and am looking to expand my knowledge into data centers and cloud computing. <br /><br /> I see myself working for a company that value my skills and have their goals set meet the demands of the industry. 
 		</p>
 		<div class="skill_carousel">
-			<div><img src="images/skills_carousel/html5.png" alt="HTML5" /></div>
-			<div><img src="images/skills_carousel/css3.png" alt="CSS3" /></div>
-			<div><img src="images/skills_carousel/javascript.png" alt="JavaScript" /></div>
-			<div><img src="images/skills_carousel/jquery.png" alt="jQuery" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/html5.png" alt="HTML5" title="HTML 5" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/css3.png" alt="CSS3" title="CSS 3"/></div>
+			<div class="carousel_item"><img src="images/skills_carousel/javascript.png" alt="JavaScript" title="JavaScript" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/jquery.png" alt="jQuery" title="jQuery" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/php.png" alt="php" title="PHP" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/sql.png" alt="SQL" title="SQL" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/python.png" alt="Python" title="Python" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/cplusplus.png" alt="C++" title="C++" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/dotnet.png" alt=".NET" title="Microsoft .NET" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/bash.png" alt="Bash" title="Linux" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/git.png" alt="Git" title="Git" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/github.png" alt="GitHub" title="GitHub" /></div>
 		</div>
 
 	</div>
 	<script src="js/matrix.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.skill_carousel').slick({
-				slidesToShow: 2,
-				slidesToScroll: 1,
-				autoplay: true,
-				autoplaySpeed: 2000,
-				arrows: true,
-				prevArrow: false,
-				nextArrow: false,
-				dots: false
-			});
+			let dwidth = window.screen.width * window.devicePixelRatio;
+			if (dwidth > 768) {
+				$('.skill_carousel').slick({
+					speed: 7000,
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 0,
+					cssEase: 'linear',
+					arrows: true,
+					prevArrow: false,
+					nextArrow: false,
+					dots: false,
+					pauseOnHover: false
+				});
+			}
 		});
 	</script>
 </body>
