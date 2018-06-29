@@ -115,13 +115,20 @@ img {
     display: flex;
     align-items: center;
 }
-.objective {
+.objective, .experience {
 	margin-right: 5em;
 	margin-left: 5em;
+}
+.experience {
+	margin-top: 5em;	
 }
 .carousel_item, .carousel_item img {
 	display: block;
 	margin: 0 auto;
+}
+.experience_container {
+	display: flex;
+	justify-items: center;
 }
 /*If viewed on mobile*/
 @media 
