@@ -9,15 +9,15 @@
 	<meta name="author" content="Rashid N H M" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/hint.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" integrity="sha256-iXhWpFRXxTihhUbE9vRJpV61YRSjRFBlolxWlC/vpz8=" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" integrity="sha384-MUdXdzn1OB/0zkr4yGLnCqZ/n9ut5N7Ifes9RP2d5xKsTtcPiuiwthWczWuiqFOn" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/hint.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />-->
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha384-YGnnOBKslPJVs35GG0TtAZ4uO7BHpHlqJhs0XK3k6cuVb6EBtl+8xcvIIOKV5wB+" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
 </head>
 <body>
 	<div id="home">
@@ -92,7 +92,18 @@
 					prevArrow: false,
 					nextArrow: false,
 					dots: false,
-					pauseOnHover: false
+					pauseOnHover: false,
+					mobileFirst: true,
+					responsive: [
+						{
+							breakpoint: 600,
+							settings: { slidesToShow: 2 }	
+						},
+						{
+							breakpoint: 480,
+							settings: { slidesToShow: 1 }
+						}
+					]
 				});
 			}
 		});

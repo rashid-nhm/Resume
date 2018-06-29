@@ -2,13 +2,18 @@
 	margin: 0;
 	padding: 0;
 }
+html, body {
+	height: 100%;
+}
 body {
 	overflow-x: hidden;
 	background-color: #efefef;
 	font-family: "Arial";
 }
 #home {
-	margin-bottom: 25%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 #hello_world {
 	font-size: 120%;
@@ -19,7 +24,6 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
 }
 .profile_picture  img {
 	display: block;
@@ -99,6 +103,26 @@ body {
 .about_me_para {
 	line-height: 150%;
 }
+.objective {
+	margin-top: -7%;	
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto/9;
+}
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+.objective {
+	margin-right: 5em;
+	margin-left: 5em;
+}
+.carousel_item, .carousel_item img {
+	display: block;
+	margin: 0 auto;
+}
 /*If viewed on mobile*/
 @media 
 only screen and (max-width: 760px),
@@ -123,19 +147,7 @@ only screen and (max-width: 760px),
 	.about_me_para {
 		margin-top: 20px;
 	}
-	.skill_carousel {
-		display: none;
+	.objective {
+		margin-top: -25%;	
 	}
-}
-.slick-initialized .slick-track {
-    display: flex;
-    align-items: center;
-}
-.objective {
-	margin-right: 5em;
-	margin-left: 5em;
-}
-.carousel_item, .carousel_item img {
-	display: block;
-	margin: 0 auto;
 }
