@@ -1,28 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rashid N H M</title>
+	<title>Resume - Rashid NHM</title>
 		
 	<meta charset="UTF-8" />
-	<meta name="description" content="Rashid N H M | Resume" />
+	<meta name="description" content="Rashid NHM | Resume" />
 	<meta name="keywords" content="resume,networking,programming,linux,kali,c++,python,python3,ccna,cisco,ccnp,admin,javascript,rashid,rashid nhm, rashid hasan,routing,switching,rashid nhm resume, rashid nhm bio" />
 	<meta name="author" content="Rashid N H M" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	
+	<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" integrity="sha384-MUdXdzn1OB/0zkr4yGLnCqZ/n9ut5N7Ifes9RP2d5xKsTtcPiuiwthWczWuiqFOn" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/hint.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/component.css" />
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" integrity="sha384-YGnnOBKslPJVs35GG0TtAZ4uO7BHpHlqJhs0XK3k6cuVb6EBtl+8xcvIIOKV5wB+" crossorigin="anonymous"></script>
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-	<div class="profile_picture">
-		<canvas id="canvas1" class="matrix_effect"></canvas>
-		<canvas id="canvas2" class="matrix_effect"></canvas>
-		<img src="images/profile_picture.jpg" alt="Profile Picture" />
-		<div class="profile_banner">
-			<span style="color: red; font-weight: bold;">rashid.nhm@resume</span>
-			<span style="color: white;">:</span><span style="color: #4286f4">~</span>
-			<span style="color: white;">$</span>
-			<span id="typewriter_bash"> Coming soon...</span>
+	<div id="home">
+		<div class="profile_picture" id="profile_picture">
+			<canvas id="canvas1" class="matrix_effect"></canvas>
+			<canvas id="canvas2" class="matrix_effect"></canvas>
+			<img src="images/profile_picture.jpg" alt="Profile Picture" />
+			<div class="profile_banner">
+				<span style="color: red; font-weight: bold;">rashid.nhm@resume</span>
+				<span style="color: white; margin-left: -0.5em;">:</span><span style="color: #4286f4">~</span>
+				<span style="color: white; margin-left: -0.5em; margin-right: 10px;">$</span>
+				<span id="typewriter_bash"> echo "<strong><span id="hello_world">Welcome!</span></strong>"</span>
+			</div>
+		</div>
+		<ul class="quick-nav-bar">
+			<li class="hint--right" aria-label="Return to Top">
+				<a href="#home" id="back-to-top" class="nav-link"><i class="material-icons">arrow_upward</i></a>
+			</li>
+			<li class="hint--right" aria-label="Objective">
+				<a href="#objective" class="nav-link"><i class="material-icons">public</i></a>
+			</li>
+			<li class="hint--right" aria-label="Experience">
+				<a href="#experience" class="nav-link"><i class="material-icons">work</i></a>
+			</li>
+			<li class="hint--right" aria-label="Education">
+				<a href="#education" class="nav-link"><i class="material-icons">book</i></a>
+			</li>
+			<li class="hint--right" aria-label="Projects/Portfolio">
+				<a href="#projects" class="nav-link"><i class="material-icons">computer</i></a>
+			</li>
+			<li class="hint--left" aria-label="Contact">
+				<a href="#contact" class="nav-link"><i class="material-icons">contacts</i></a>
+			</li>
+		</ul>
+	</div>
+	<div id="objective" class="objective">
+		<h2 class="objectvie_title">Objective</h2> <br />
+		<p class="about_me_para" style="margin-bottom: 2em;">
+			My name is <a href="https://www.linkedin.com/in/rashid-nhm/" target="_blank">Rashid NHM</a> and I am interested in working for a technology driven company where my skills would be an asset. I am a programmer and network enginner 
+			who is ready to take on new challenges and hurdles life has to offer. I have over 5 years of programming experience and over 2 years experience in working with networked environments. I have completed my CCNA and CCNP courses 
+			and am looking to expand my knowledge into data centers and cloud computing. <br /><br /> I see myself working for a company that value my skills and have their goals set meet the demands of the industry. 
+		</p>
+		<div class="skill_carousel">
+			<div class="carousel_item"><img src="images/skills_carousel/html5.png" alt="HTML5" title="HTML 5" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/css3.png" alt="CSS3" title="CSS 3"/></div>
+			<div class="carousel_item"><img src="images/skills_carousel/javascript.png" alt="JavaScript" title="JavaScript" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/jquery.png" alt="jQuery" title="jQuery" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/php.png" alt="php" title="PHP" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/sql.png" alt="SQL" title="SQL" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/python.png" alt="Python" title="Python" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/cplusplus.png" alt="C++" title="C++" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/dotnet.png" alt=".NET" title="Microsoft .NET" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/bash.png" alt="Bash" title="Linux" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/git.png" alt="Git" title="Git" /></div>
+			<div class="carousel_item"><img src="images/skills_carousel/github.png" alt="GitHub" title="GitHub" /></div>
 		</div>
 	</div>
+	<div id="experience" class="experience">
+		<h2 class="experience_title">Experience</h2><br />
+		<div class="experience_header">
+			<h3 id="pc">Hover over each image for more information</h3>
+			<h3 id="mob">Click each image for more information</h3>
+		</div>
+		<div class="experience_container">
+			<div class="exp_wrapper">
+				<ul class="stage clearfix">
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Automation and Process Improvement Specialist</h1>
+									<span class="year">2017 - Present</span>
+                                    <span class="rating"><a style="color: inherit; text-decoration: inherit;" href="https://www.bell.ca" target="_blank">Bell Canada</a></span>
+									<span class="duration"></span>
+								</header>
+								<p class="experience_para">
+									- Created various internal software to aid linear process automation <br /><br />
+									- Automated remote file management by making software to batch transfer large files <br /><br />
+									- Streamlined validation of various file contents across multiple platforms <br /><br />
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Virtual Machine Designer</h1>
+									<span class="year">2016 - 2017</span>
+									<span class="rating"><a style="color: inherit; text-decoration: inherit;" href="https://uoit.ca" target="_blank">UOIT</a></span>
+									<span class="duration"></span>
+								</header>
+								<p class="experience_para">
+									- Used terminal based Virtual Machine manager to manage KVMs <br /><br />
+									- Created CTF challenges utilizing and exploiting vulnerabilities of different platforms <br /><br />
+									- Deployed docker with pre-defined images to host challenge environments<br /><br />
+								</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Alpha Instructor</h1>
+									<span class="year">2016 - 2018</span>
+                                    <span class="rating"><a style="color: inherit; text-decoration: inherit;" href="https://hatchcoding.com/ca" target="_blank">Hatch Canada</a></span>
+									<span class="duration"></span>
+								</header>
+								<p>
+									- Instrct and coack students on JavaScript and Python <br /><br />
+									- Assist in making Python Project Library for Hatch Alpha <br /><br />
+									- Create lessons and exercises on a personalised per student basis to preare them for different competitions<br /><br />
+								</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div><!-- /wrapper -->
+		</div>
+        <div style="display: flex; justify-content: center;">
+            <h3 style="margin-top: 6px;">See full descriptions of job experience here &nbsp&nbsp</h3>
+            <a href="https://www.linkedin.com/in/rashid-nhm/" target="_blank"><img src="images/linkedin_icon.png" /></a>
+        </div>
+
+	</div>
 	<script src="js/matrix.js"></script>
+	<script>
+		$(document).ready(function(){
+			let dwidth = window.screen.width * window.devicePixelRatio;
+			if (dwidth > 768) {
+				$('.skill_carousel').slick({
+					speed: 7000,
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 0,
+					cssEase: 'linear',
+					arrows: true,
+					prevArrow: false,
+					nextArrow: false,
+					dots: false,
+					pauseOnHover: false,
+					responsive: [
+						{
+							breakpoint: 600,
+							settings: { slidesToShow: 2 }	
+						},
+						{
+							breakpoint: 480,
+							settings: { 
+								slidesToShow: 1,
+								mobileFirst: true
+							}
+						}
+					]
+				});
+			}
+		});
+	</script>
 </body>
 </html>

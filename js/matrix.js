@@ -2,10 +2,17 @@ let canvas = document.getElementById( 'canvas1' );
 let ctx = canvas.getContext( '2d' );
 
 let man_scale = 1;
+let home_div = document.getElementById( 'home' );
 
 let canvas2 = document.getElementById( 'canvas2' );
 let ctx2 = canvas2.getContext( '2d' );
-let cw = window.innerWidth, ch = window.innerHeight, charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'], maxCharCount = 100, fallingCharArr = [], fontSize = 5, maxColums = cw/(fontSize*man_scale);
+let cw = home_div.offsetWidth, 
+	ch = home_div.offsetHeight, 
+	charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'], 
+	maxCharCount = 100, 
+	fallingCharArr = [], 
+	fontSize = 5, 
+	maxColums = cw/(fontSize*man_scale);
 canvas.width = canvas2.width = cw;
 canvas.height = canvas2.height = ch;
 
