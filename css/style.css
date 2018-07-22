@@ -8,7 +8,7 @@ html, body {
 body {
 	overflow-x: hidden;
 	background-color: #efefef;
-	font-family: "Arial";
+	font-family: Arial, Courier, Monaco, monospace;
 }
 #home {
 	height: 100%;
