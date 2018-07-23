@@ -10,6 +10,19 @@ body {
 	background-color: #efefef;
 	font-family: Arial, Courier, Monaco, monospace;
 }
+a {
+	color: #1976D2;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+a:hover {
+	background-color: rgba(33,150,243, 0.1);
+	text-decoration: underline;
+}
+
+
+
 #home {
 	height: 100%;
 	top: 0;
@@ -73,7 +86,7 @@ body {
 .quick-nav-bar li {
 	display: inline-block;
 	text-align: center;
-	
+
 	flex: 1;
 	-webkit-flex: 1; /*Safari*/
 	-ms-flex: 1; /*Internet Explorer*/
@@ -83,8 +96,8 @@ body {
 	background-color: #dee1e5;
 }
 .quick-nav-bar li a {
-	margin: 0px;
-	padding: 15px 0px 15px 0px;
+	margin: 0;
+	padding: 15px 0 15px 0;
 	display: block;
 	height: 100%;
 	color: #dee1e5;
@@ -139,6 +152,141 @@ img {
 .experience_header #mob {
 	display: none;
 }
+.education {
+	width: 100vw;
+}
+.courses {
+
+}
+.edurow {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+}
+.card {
+	background: #fff;
+	border-radius: 2px;
+	height: 300px;
+	margin: 1rem 1rem 2rem;
+	width: 300px;
+}
+/*noinspection CssUnknownProperty*/
+#educard {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.flip-container {
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+
+	-ms-transform: perspective(1000px);
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+}
+
+/* START: Accommodating for IE */
+.flip-container:hover .back, .flip-container.hover .back, .flip-container:active .back {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.flip-container:hover .front, .flip-container.hover .front, .flip-container:active .front {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+/* END: Accommodating for IE */
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-ms-transition: 0.6s;
+
+	-moz-transition: 0.6s;
+	-moz-transform: perspective(1000px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateY(0deg);
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: rotateY(0deg);
+
+	-o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+	-o-transform: rotateY(0deg);
+
+	-ms-transition: 0.6s;
+	-ms-transform-style: preserve-3d;
+	-ms-transform: rotateY(0deg);
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+
+	z-index: 2;
+}
+
+.back {
+	background: #ffffff;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.eduContent {
+	background-color: #dbefff;
+	line-height: 150%;
+}
+#data_center a {
+	margin: 15px auto;
+}
+#networking a {
+	margin-top: 5px;
+}
+.eduintro  {
+	text-align: justify;
+	margin-left: 7.5em;
+	margin-right: 5em;
+}
+.eduintro  #mob {
+	display: none;
+}
+
 /*If viewed on mobile*/
 @media 
 only screen and (max-width: 760px),
@@ -167,13 +315,23 @@ only screen and (max-width: 760px),
 		margin-top: -25%;	
 	}
 	.experience #mob {
+		text-align: center;
 		display: inherit;
 	}
 	.experience #pc {
 		display: none;
 	}
 	.experience, .experience .experience_header {
-		margin: auto;
-		margin-top: 5px;
+		margin: 5px auto auto;
 	}
+	.eduintro {
+		margin: 1rem;
+	}
+	.eduintro #pc {
+		display: none;
+	}
+	.eduintro #mob {
+		display: inherit;
+	}
+
 }
