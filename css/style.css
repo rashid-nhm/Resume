@@ -172,7 +172,7 @@ img {
 	width: 300px;
 }
 /*noinspection CssUnknownProperty*/
-#educard {
+.educard {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .flip-container {
@@ -281,10 +281,14 @@ img {
 .eduintro  {
 	text-align: justify;
 	margin-left: 7.5em;
-	margin-right: 5em;
+	margin-right: 7.5em;
 }
 .eduintro  #mob {
 	display: none;
+}
+.certification {
+	margin-left: 7.5em;
+	margin-top: 5em;
 }
 
 /*If viewed on mobile*/

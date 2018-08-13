@@ -208,7 +208,7 @@
 		</div>
 		<div class="courses">
 			<div class="edurow">
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -230,7 +230,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -251,7 +251,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -267,7 +267,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -288,7 +288,7 @@
 				</div>
 			</div>
 			<div class="edurow">
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -307,7 +307,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -325,7 +325,7 @@
 					</div>
 
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -343,7 +343,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="card" id="educard">
+				<div class="card educard">
 					<div class="flip-container">
 						<div class="flipper">
 							<div class="front">
@@ -362,10 +362,31 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/matrix.js"></script>
+	<div class="certification">
+		<h2>Certification</h2>
+		<div class="cert_para eduintro">
+			Over the last few years, I hve been able to achieve a couple professional certifications. I have trained and
+			finished the <a class="hint--bottom" aria-label="Cisco Certified Network Professional" href="https://en.wikipedia.org/wiki/Network_function_virtualization" target="_blank">CCNP</a>
+			Route / Switch / TSHOOT courses, and am currently taking Cisco <a class="hint--bottom" aria-label="Voice over IP" href="#" target="_blank">VoIP</a>.<br /><br />
+			<h3 style="margin: 4px auto 7px auto;">Click on a certification for more information</h3>
+		</div>
+		<div id="cert-img" style="display: flex; flex: 1; flex-wrap: wrap; justify-content: space-evenly;">
+			<div class="hint--top" aria-label="Cisco Certified Network Associate">
+				<a href="https://www.youracclaim.com/badges/3cf56e92-c03d-4470-acae-3774ac0c1db5" target="_blank">
+					<img src="images/certificates/ccna-rs.png" alt="CCNA" />
+				</a>
+			</div>
+			<div class="hint--top" aria-label="Juniper Network Certified Internet Associate">
+				<a href="https://www.youracclaim.com/badges/380e62d3-07c3-4076-9f8e-69fc076c6d26" target="_blank">
+					<img src="images/certificates/jncia-junos.png" alt="JNCIA-Junos" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/matrix.js" async></script>
 	<script>
 		$(document).ready(function(){
-			let dwidth = window.screen.width * window.devicePixelRatio;
+			let dwidth = window.screen.width;
 			if (dwidth > 768) {
 				$('.skill_carousel').slick({
 					speed: 7000,
