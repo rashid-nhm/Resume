@@ -24,7 +24,8 @@ a:hover {
 
 
 #home {
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	top: 0;
 	left: 0;
 }
@@ -325,6 +326,12 @@ img {
 	margin: auto;
 }
 
+.contact-images {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 /*If viewed on mobile*/
 @media 
 only screen and (max-width: 760px),
@@ -370,6 +377,13 @@ only screen and (max-width: 760px),
 	}
 	.eduintro #mob {
 		display: inherit;
+	}
+	.projects {
+		display: none;
+	}
+	.certification {
+		margin: 0;
+		justify-content: center;
 	}
 
 }
