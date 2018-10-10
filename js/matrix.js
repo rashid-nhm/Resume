@@ -6,10 +6,9 @@ let home_div = document.getElementById( 'home' );
 
 let canvas2 = document.getElementById( 'canvas2' );
 let ctx2 = canvas2.getContext( '2d' );
-let cw = home_div.offsetWidth, 
-	ch = home_div.offsetHeight, 
-	charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'], 
-	maxCharCount = 100, 
+let cw = home_div.offsetWidth,
+	ch = home_div.offsetHeight,
+	charArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'],
 	fallingCharArr = [], 
 	fontSize = 5, 
 	maxColums = cw/(fontSize*man_scale);
