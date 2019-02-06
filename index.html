@@ -35,15 +35,76 @@
 			</ul>
 		</div>
 		<div class="parallax-container">
-			<div class="parallax"><img class="responsive-img home_background" src="images/home_ng.jpg" /></div>
+			<div class="parallax"><img class="responsive-img blur" src="images/home_ng.jpg" /></div>
 			<div class="center profile_picture"><img class="responsive-img circle" src="images/profile_picture.jpg" alt="Profile Picture" /></div>
 			<h2 class="header center white-text">Welcome</h2>
+		</div>
+		<div class="section white">
+			<div class="row container">
+				<h2 class="header">About Me</h2>
+				<p class="grey-text text-darken-3 lighten-3 flow-text">
+					My name is <a href="https://www.linkedin.com/in/rashid-nhm/" target="_blank">Rashid NHM</a> and I am interested in working for a technology driven company where my skills would be an asset. I am a programmer and network enginner
+					who is ready to take on new challenges and hurdles life has to offer. I have over 5 years of programming experience and over 2 years experience in working with networked environments. I have completed my CCNA and CCNP courses
+					and am looking to expand my knowledge into data centers and cloud computing. <br /><br /> I see myself working for a company that value my skills and have their goals set to meet the demands of the industry.
+				</p>
+				<h4 class="header">Skills Carousel</h4>
+			</div>
+			<div class="carousel no-auto-init">
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="Python" src="images/skills_carousel/python.png" alt="Python" title="Python" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="HTML 5" src="images/skills_carousel/html5.png" alt="HTML5" title="HTML 5" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="CSS 3" src="images/skills_carousel/css3.png" alt="CSS3" title="CSS 3"/></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="JavaScript" src="images/skills_carousel/javascript.png" alt="JavaScript" title="JavaScript" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="jQuery" src="images/skills_carousel/jquery.png" alt="jQuery" title="jQuery" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="SQL" src="images/skills_carousel/sql.png" alt="SQL" title="SQL" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="PHP" src=images/skills_carousel/php.png alt="PHP" title="PHP" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="C++11" src="images/skills_carousel/cplusplus.png" alt="C++" title="C++" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="MicroSoft .NET" src="images/skills_carousel/dotnet.png" alt=".NET" title=".NET" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="Linux" src="images/skills_carousel/bash.png" alt="Linux" title="Linux" /></a>
+				<a class="carousel-item"><img class="tooltipped" data-position="top" data-tooltip="Git" src="images/skills_carousel/git.png" alt="Git" title="Git" /></a>
+			</div>
+		</div>
+		<div class="parallax-container">
+			<div class="parallax">
+				<img class="responsive-img" src="images/work_experience.jpg" />
+			</div>
+		</div>
+		<div class="section white">
+			<div class="row container">
+				<h2 class="header">Experience</h2>
+				<div class="row">
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-content">
+								<span class="card-title">Bell Canada</span>
+								ASDF
+							</div>
+						</div>
+					</div>
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-content">
+								<span class="card-title">University of Ontario Institute of Technology</span>
+								ASDF
+							</div>
+						</div>
+					</div>
+					<div class="col s4">
+						<div class="card small">
+							<div class="card-content">
+								<span class="card-title">Hatch Canada</span>
+								ASDF
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script>
 			$( document ).ready(function(){
 				M.AutoInit();
+				$( ".carousel" ).carousel({indicators: true, shift: 75, padding: 25});
 			});
 		</script>
 	</body>
